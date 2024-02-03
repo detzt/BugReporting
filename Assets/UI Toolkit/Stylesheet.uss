@@ -1,0 +1,5 @@
+
+/* Trying to limit the height of the dropdown does not work because it is overridden inline. */
+.unity-base-dropdown__container-outer {
+  max-height: 50% !important;
+}

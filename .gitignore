@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/[Uu][Ii][Ee]lements[Ss]chema/
 
 # Probably from Android debug builds
 /.utmp/

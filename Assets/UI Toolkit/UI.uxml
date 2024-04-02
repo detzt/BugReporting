@@ -1,2 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; justify-content: space-around;">
+        <ui:VisualElement name="DebugMenu" style="flex-direction: row; justify-content: space-around;">
+            <ui:SliderInt label="Target FPS" value="30" high-value="60" low-value="-1" show-input-field="true" name="TargetFPS" style="flex-grow: 1; color: rgb(83, 83, 83); max-width: 500px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>

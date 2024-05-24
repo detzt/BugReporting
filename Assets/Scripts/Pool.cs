@@ -68,12 +68,12 @@ public class Pool<TComp> : IObjectPool<TComp> where TComp : Component, IPoolable
     {
         // This would be the proper implementation, but the contents of PooledObject are inaccessible.
         // This constructor is internal:
-        // return new PooledObject<T>(v = Get(), this);
+        return new PooledObject<TComp>(v = Get(), this);
         // And the fields are private:
         // return new PooledObject<TComp>() { m_ToReturn = v, m_Pool = this };
 
         // Withe the empty constructor (which should actually not exist), the object won't know which pool to return to when disposed.
-        v = Get();
-        return new PooledObject<TComp>();
+        //v = Get();
+        //return new PooledObject<TComp>();
     }
 }

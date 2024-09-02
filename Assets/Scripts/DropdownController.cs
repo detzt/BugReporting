@@ -18,5 +18,10 @@ public class DropdownController : MonoBehaviour
         dropdown.index = 1;
 
         // But I cannot expand or collapse the dropdown
+
+        // There is BasePopupField<string, string>.ShowMenu() method, but it is internal.
+        //dropdown.ShowMenu();
+
+        // And there is no method there to close the menu again.
     }
 }
